@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8c655d3807.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-    <script src="switch.js"></script>
-
-
+    <!-- <script src="switch.js"></script> -->
+    <!-- <script src="funcion.js"></script> -->
 
 
 </head>
 <body class="flex_colum">
 
     <!-------------HEADER ----------------->
-    <nav>
+    <nav class="home_item">
         <h1>Dopetrope</h1>
         <ul class="flex_row">
             <li><a href="#">Home</a></li>
@@ -28,30 +27,29 @@
             <li><a href="#">No Sidebar</a></li>
         </ul>
     </nav>
-    <header class="home_item flex_row" id="header">
+    <header class="home_item flex_row">
         <div id="titulo">
             <h2>Howdy. This is Dopetrope.</h2>
             <p> A responsive template by HTML5 UP</p>
         </div>
     </header>
     <!-------------MAIN ----------------->
-
     <main>
-        <div class="" id="configuracion">
+        <div id="configuracion" class="home_item">
 
-            <div class="flex_row" id="iconer_banner">
-                <div class="flex_row_item flex_colum configuracion_item">
-                    <div class="bandera">
+            <div id="iconer_banner" class="flex_row">
+                <div class="iconer_banner_item configuracion_item flex_colum">
+                    <div id="bandera1" class="bandera">
                         <lord-icon src="https://cdn.lordicon.com/dycatgju.json" trigger="hover" colors="primary:#ffffff" class="ico">
-                        </lord-icon>                    </div>
+                        </lord-icon>                    
+                    </div>
                     <h3>Ipsum consequat</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Explicabo blanditiis accusantium 
                     </p>
-
                 </div>
-                <div class="flex_row_item flex_colum configuracion_item">
-                    <div class="bandera">
+                <div class="iconer_banner_item configuracion_item flex_colum">
+                    <div id="bandera2"  class="bandera">
                         <lord-icon class="ico" src="https://cdn.lordicon.com/hnvrjtda.json" trigger="hover" colors="primary:#ffffff">
                         </lord-icon>
                     </div>
@@ -61,17 +59,15 @@
                     </p>
 
                 </div>
-                <div class="flex_row_item flex_colum configuracion_item">
-                    <div class="bandera">
+                <div class="iconer_banner_item configuracion_item flex_colum">
+                    <div id="bandera3" class="bandera">
                         <lord-icon src="https://cdn.lordicon.com/xryjrepg.json" trigger="hover" colors="primary:#ffffff" class="ico">
                         </lord-icon>
                     </div>
-
                     <h3>Ipsum consequat</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Explicabo blanditiis accusantium 
                     </p>
-
                 </div>
             </div>
 
@@ -84,11 +80,10 @@
         </div>
     <!-------------PORTAFOLIO ----------------->    <!-------------BLOG ----------------->
 
-
-        <div class="" id="portafolio">
+        <div id="portafolio" class="home_item">
 
             <h3>My Portafolio</h3>
-            <div id="portafolio_gridd">
+            <div id="portafolio_gridd" class="home_item">
                 <div class="portafolio_gridd_item flex_colum">
                     <img src="./img/pic02.jpg" alt="">
                     <h3>Lorem ipsum et dolor</h3>
@@ -145,9 +140,9 @@
                 </div>
             </div>
             <h3>The Blog</h3>
-            <div class="gridd_home_item flex_row" id="blog">
+            <div id="blog" class="home_item flex_row">
 
-                <div class="blog_item">
+                <div class="blog_item flex_colum">
                     <img src="./img/pic08.jpg" alt="">
                     <h3>Lorem ipsum et dolor</h3>
                     <p>Pasted 45 minujtes ago</p>
@@ -157,12 +152,12 @@
                         illum natus veniam? Dolores dolore repudiandae aliquam soluta 
                         quasi, tenetur saepe quidem sint commodi obcaecati.
                     </p>
-                    <div class="flex_row">
-                        <button> Continue Reading</button>
-                        <button> 33 comments</button>
+                    <div id="blog_banner_buttom" class="flex_row">
+                        <button> <i class="fa-regular fa-file-lines"></i>  Continue Reading</button>
+                        <button><i class="fa-solid fa-comment"></i>  33 comments</button>
                     </div>
                 </div>
-                <div class="blog_item">
+                <div class="blog_item flex_colum">
                     <img src="./img/pic09.jpg" alt="">
                     <h3>Lorem ipsum et dolor</h3>
                     <p>Pasted 45 minujtes ago</p>
@@ -172,28 +167,163 @@
                         illum natus veniam? Dolores dolore repudiandae aliquam soluta 
                         quasi, tenetur saepe quidem sint commodi obcaecati.
                     </p>
-                    <div class="flex_row">
-                        <button> Continue Reading</button>
-                        <button> 33 comments</button>
+                    <div id="blog_banner_buttom" class="flex_row">
+                        <button><i class="fa-regular fa-file-lines"></i>  Continue Reading</button>
+                        <button> <i class="fa-solid fa-comment"></i>  33 comments</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    
+    </main>
+
+    <!-------------FOOTER ----------------->
+    <footer class="home_item">
+        <div id="informacion" class="flex_row">
+            <div id="calendario" class="informacion_item flex_colum">
+                <h3>Blandit nils adipiscin</h3>
+                <div class="calendario_item flex_row">
+                    <div class="calendar_number flex_colum">
+                        <span>Jan</span> 
+                        <span class="num">27</span>
+                    </div>
+                    <div class="calendar_description">
+                        <h4>lorem dolor sit amet veroeros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos recusandae labore libero quas debitis!</p>
+                    </div>
+                </div>
+                <div class="calendario_item flex_row">
+                    <div class="calendar_number flex_colum">
+                        <span>Jan</span> 
+                        <span class="num">27</span>
+                    </div>
+                    <div class="calendar_description">
+                        <h4>lorem dolor sit amet veroeros</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam labore hic maiores pariatur quia assumenda!</p>
+                    </div>
+                </div>
+                <div class="calendario_item flex_row">
+                    <div class="calendar_number flex_colum">
+                        <span>Jan</span> 
+                        <span class="num">27</span>
+                    </div>
+                    <div class="calendar_description">
+                        <h4>lorem dolor sit amet veroeros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur quaerat molestias quod saepe.</p>
+                    </div>
+                </div>
+                <div class="calendario_item flex_row">
+                    <div class="calendar_number flex_colum">
+                        <span>Jan</span> 
+                        <span class="num">27</span>
+                    </div>
+                    <div class="calendar_description">
+                        <h4>lorem dolor sit amet veroeros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum beatae voluptates totam nobis autem accusantium.</p>
+                    </div>
+                </div>
+                <div class="calendario_item flex_row">
+                    <div class="calendar_number flex_colum">
+                        <span>Jan</span> 
+                        <span class="num">27</span>
+                    </div>
+                    <div class="calendar_description">
+                        <h4>lorem dolor sit amet veroeros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatem non vero officiis alias.</p>
+                    </div>
+                </div>
+                <div class="calendario_item flex_row">
+                    <div class="calendar_number flex_colum">
+                        <span>Jan</span> 
+                        <span class="num">27</span>
+                    </div>
+                    <div class="calendar_description">
+                        <h4>lorem dolor sit amet veroeros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum alias voluptate! Quibusdam, consequuntur nemo!</p>
                     </div>
                 </div>
 
             </div>
 
+            <div id="about" class="informacion_item flex_colum">
+                <h3>What`s this all about</h3>
+                <img src="./img/pic10.jpg" alt="">
+                <p>This is <span>Dopetrope</span>  a free, fully responsive HTML5 size template by <span>AJ</span> for
+                     <span>HTML5UP</span> it's released for free under the <a href="">Creative Commons Attribution</a> license so feel 
+                    free to use it for any personal or commercial project-just don't forget to credit us!
+                </p>
 
+                <button>Find out more</button>
 
-            
+            </div>
 
         </div>
+
+        <div id="contactos" class="flex_row">
+
+            <div class="contactos_item">
+                <h3>Tempus consequat</h3>
+                <ul>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                </ul>
+
+            </div>
+
+            <div class="contactos_item">
+                <h3>Tempus consequat</h3>
+                <ul>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                    <li> <a href=""> Lorem, ipsum dolor sit amet consectetur adipisicing.</a></li>
+                </ul>
+            </div>
+
+
+            <div class="contactos_item">
+                <h3>Tempus consequat</h3>
+                <ul class="flex_row">
+                    <li> <i class="fa-brands fa-facebook-f"></i></li>
+                    <li> <i class="fa-brands fa-twitter"></i></li>
+                    <li> <i class="fa-brands fa-dribbble"></i> </li>
+                    <li> <i class="fa-brands fa-tumblr"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i> </li>
+                    
+                </ul>
+
+                <div id="datos" class="flex_colum">
+                    <div class="datos_item flex_row">
+                     <h4>Address</h4>
+                     <p>untitled incorporated <br> 1234 Somewhere road Suite <br> Nashville TN 00000-0000</p>
+                    </div>
+                    <div  class=" datos_item flex_row">  
+                     <h4>Mail</h4>
+                     <a>someone@untitled.title</a>
+                    </div>
+                    <div class="datos_item flex_row">
+                        <h4>Phone</h4>
+                        <p>(000)000-000</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex_row">
+            <p>Untitled.All rights reserved</p>
+            <p>Desidgn:<a>HTML5 UP</a></p>
+            <p>Demo Images:<a>Dreametry Doodle</a></p>
+         </div>
     
-    
-
-
-    </main>
-
-    <!-------------FOOTER ----------------->
-    <footer class="home_item" id= "footer">
-
     </footer>
 </body>
 </html>
