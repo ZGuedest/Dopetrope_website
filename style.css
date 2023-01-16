@@ -161,7 +161,7 @@ h2{
 
 #portafolio_gridd{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     justify-content: center;
     text-align: center;
     width: 80%;
@@ -186,7 +186,7 @@ h2{
     border: none;
 }
 .portafolio_gridd_item button, #blog_banner_buttom button, #configuracion  button, form input[type=submit]{
-    width: 40%;
+    width: 35%;
  }
 
  .portafolio_gridd_item button,.btn--black, form input[type=submit]{
@@ -343,14 +343,11 @@ footer a{
 
 }
 
-.enlaces_item, #datos, #redes{
-    gap: 2rem;
-}
+.enlaces_item, #datos, #redes, .enlaces_item ul{ gap: 2rem }
 
+.enlaces_item{ width: 44%; }
 
-#redes{
-    width: 25%
-}
+#redes{ width: 25% }
 
 #redes li{
     position: relative;
@@ -383,25 +380,34 @@ footer a{
 
 #datos p{
     line-height:2;
+   
+}
+
+.datos_p{
+    width: 60%;
 }
 
 .datos_item{
-    gap: 4rem;
+    /* gap: 4rem; */
     border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
     padding-bottom: 1rem;
+    width: 100%;
+    justify-content: left;
 }
 
 .ico{
     color: white;
-    padding: 1rem 0 0 0;
-    width:70px;
-    height:70px; 
+    padding: 0.6rem 0 0 0;
+    width:50px;
+    height:50px; 
     font-size: 2em;
     border-radius: 0.5rem;
 }
 
 #redes ul{
-    gap:4rem
+    gap:3rem;
+    justify-content: left;
+    padding-bottom: 1.8rem;
 }
 
 .links{
@@ -512,4 +518,62 @@ select{
 
 
 
-/*--------------------------------------------------------*/
+/*--------------------------RESPONSIVE------------------------------*/
+
+@media screen and (max-width : 1600px){
+
+    .blog_item { width: 48%;}
+
+    .bandera { width: 70%;}
+
+    #blog_banner_buttom button{ margin: 2rem 1rem 2rem 2rem;}
+
+    form { width: 50%;}
+
+    /* select { width: 87%; } */
+
+    .calendar_number { padding: 0.5rem 0 0 1rem;}
+
+    #about button { width: 50%;}
+
+    #titulo { width: 45%;}
+
+    #enlaces { 
+        width: 62%; 
+        gap:3rem
+    }
+    .datos_item {
+        padding-bottom: 2rem;
+    }
+
+
+}
+@media screen and (max-width : 1400px){
+
+    select { width: 87%; }
+    #blog_banner_buttom button{width: 40%;}
+
+    #contactos {
+        width: 84%;
+        gap: 3rem;
+     
+    }
+
+    #enlaces { 
+        gap: 2rem;
+        width: 69%; 
+    }
+
+    .ico {
+        width: 40px;
+        height: 40px;
+        padding: 0.3rem 0 0 0;
+    }
+
+    #redes ul {
+     gap: 2rem;
+     justify-content: left;
+    }
+
+}
+
