@@ -49,9 +49,33 @@ nav{
     padding: 0 0 4rem 0;
 }
 
+nav ul{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.checkbtn_menu{
+    font-size: 30px;
+    color: rgba(9,51,109,255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check_menu{
+    display: none;
+  }
+
+  #logo_etiqueta2{
+    display: none;
+  }
+
 h1{
-    padding: 3rem 0 1rem 0;
     font-weight: 900;
+    padding-left: 2rem;
 }
 
 a, p, footer{
@@ -128,18 +152,7 @@ h2{
     height: 5rem;
 }
 
-/* #configuracion  button{
-    width: 15%;
-    background-color: red;
 
-    height: 3rem;
-    color: white;
-    font-size: large;
-    font-weight: 700;
-    border: none;
-    border-radius: 0.2rem;
-
-} */
 #configuracion  button{
     width: 15%;
     margin: 0 0 0 0;
@@ -558,7 +571,6 @@ select{
         gap: 3rem;
      
     }
-
     #enlaces { 
         gap: 2rem;
         width: 69%; 
@@ -576,4 +588,119 @@ select{
     }
 
 }
+
+@media screen and (max-width : 900px){
+
+    #configuracion button { width: 32%; }
+
+    .blog_item, #enlaces, .bandera { width: 100%; }
+
+    form { width: 80%; }
+
+    #calendario, #about, #redes { width: 95%; }
+
+    header{ height: 300px;}
+}
+
+@media screen and (max-width : 480px){
+
+    .bandera{ width: 45%;}
+
+    .iconer_banner_item, form{ width: 95%;}
+
+    #configuracion button {
+        width: 42%;
+    }
+
+    .portafolio_gridd_item{
+        margin: 0 1rem 0 1rem;
+    }
+
+    #blog, #informacion, select { width: 90%;}
+
+    .blog_item, #enlaces, .personal_data_item{
+        width: 100%;
+    }
+
+    #blog_banner_buttom button {
+        width: 80%;
+        margin: 1rem 1rem 1rem 2re
+    }
+
+    select { margin-top: 1rem;}
+
+
+    .calendario_item { gap: 2rem;}
+
+    .calendar_number { 
+        width: 15%;
+        padding: 0.5rem 0 0 0.5rem;
+    }
+
+    #contactos, .enlaces_item {
+        width: 100%;
+     }
+
+     .portafolio_gridd_item button, form input[type=submit] {
+        width: 50%;
+    }
+
+    .links { height: 10rem;}
+    header{ background-size: auto 100%;}
+
+    #titulo { width: 95%;}
+
+    nav {
+        padding-top: 0rem;
+        display: flex;
+       }
+     /* nav {
+        position: fixed; top: 0; 
+       }  */
+
+       /* nav{
+        z-index: 100;
+
+       } */
+       .checkbtn_menu{
+         display: block;
+       } 
+    nav ul{
+        
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: flex-start; */
+        justify-content: left;
+        padding-left: 3rem;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+          
+    }
+
+    #check_menu:checked ~ ul{
+        left:0;
+      } 
+
+      #logo_etiqueta2, #logo_etiqueta{
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+      }
+
+      
+
+
+
+    
+
+        
+}
+
+
 
