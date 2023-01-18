@@ -5,7 +5,6 @@ let button= document.getElementById("form_button");
 
 button.addEventListener("click",function(event){
     event.preventDefault();
-
     let num1 = parseInt(document.getElementById("textName").value);
     let num2 = parseInt(document.getElementById("textEmail").value);
 
