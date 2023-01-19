@@ -1,687 +1,428 @@
-@charset "utf-8";
+* html footer #informacion #calendario .calendario_item,
+* body footer #informacion #calendario .calendario_item, * html footer #informacion,
+* body footer #informacion, * html #formulario form .formulario .whoare .whoare_item,
+* body #formulario form .formulario .whoare .whoare_item, * html #formulario form .formulario #personal_data,
+* body #formulario form .formulario #personal_data, * html #formulario,
+* body #formulario, * html #blog #blog_banner_buttom,
+* body #blog #blog_banner_buttom, * html #blog,
+* body #blog, * html #portafolio,
+* body #portafolio, * html #configuracion #btns,
+* body #configuracion #btns, * html #configuracion #iconer_banner,
+* body #configuracion #iconer_banner, * html #configuracion,
+* body #configuracion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+* html footer #informacion #calendario .calendario_item .calendar_number,
+* body footer #informacion #calendario .calendario_item .calendar_number, * html footer #informacion #calendario,
+* body footer #informacion #calendario, * html footer,
+* body footer, * html #formulario form .formulario .whoare,
+* body #formulario form .formulario .whoare, * html #formulario form .formulario,
+* body #formulario form .formulario, * html #formulario form,
+* body #formulario form, * html #blog .blog_item,
+* body #blog .blog_item, * html #portafolio #portafolio_gridd .portafolio_gridd_item,
+* body #portafolio #portafolio_gridd .portafolio_gridd_item, * html #configuracion #iconer_banner .iconer_banner_item,
+* body #configuracion #iconer_banner .iconer_banner_item {
+  display: flex;
+  flex-direction: column;
+}
+
+* html footer,
+* body footer, * html #formulario,
+* body #formulario, * html #blog,
+* body #blog, * html #portafolio #portafolio_gridd,
+* body #portafolio #portafolio_gridd, * html #portafolio,
+* body #portafolio, * html #configuracion,
+* body #configuracion {
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-
-html,
-body {
-    font-size: 16px;
-    font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
-}
-
-.flex_row{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.flex_colum {
-    display: flex;
-    flex-direction: column;
-}
-
-.home_item{
-    text-align: center;
-    justify-content: center;
-    padding: 2rem 0 2rem 0; 
-}
-
-header{
-    height: 450px;
-    background-image: url(./img/pic01.jpg);
-    background-repeat: no-repeat;
-    background-color: #cce8f4;
-    background-size: contain;
-    background-position: center;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-nav{
-    justify-content: center;
-    text-align: center;
-    padding: 0 0 4rem 0;
-}
-
-nav ul{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-
-}
-
-.checkbtn_menu{
-    font-size: 30px;
-    color: rgba(9,51,109,255);
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check_menu{
-    display: none;
-  }
-
-  #logo_etiqueta2{
-    display: none;
-  }
-
-h1{
-    font-weight: 900;
-    padding-left: 2rem;
-}
-
-a, p, footer{
-    text-decoration: none;
-    color: gray;
-}
-
-nav li{
-    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
-    border-radius: 5%;
-}
-nav li:hover{
-    background-color: #d52349;
-}
-
-li:hover > a{
-    color: white;
-}
-
-#titulo{
-    background-color: black;
-    width: 30%;
-    border-radius: 2%;
-    padding: 1rem 0rem 1rem 0rem;
-}
-
-#titulo > p{
-    color: rgb(170, 4, 4) ;
-}
-
-h2{
-   color: white;
-   font-weight: 900;
-   padding: 0rem 0rem 1rem 0rem;
-}
-
-.iconer_banner_item{
-    width: 20%;
-}
-#configuracion{
-    background-color: white;
-    text-align: center;
-    padding: 0 0 4rem 0;
-}
-.bandera{
-    height: 10rem;
-    clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
-    width: 50%;
-    border-radius: 5%;
-}
-#bandera1{
-    background-color: #d52349;
-}
-#bandera2{
-    background-color: #252122;
-}
-
-#bandera3{
-    background-color: #827a7c;
-}
-
-.configuracion_item{
-    align-items: center;
-    gap: 1.2rem;
-    line-height:1.5;
-}
-#iconer_banner{
-    padding: 3rem 0rem 3rem 0rem;
-}
-.icon{
-    padding: 2rem 0 0 0;
-    width: 10rem;
-    height: 5rem;
-}
-
-
-#configuracion  button{
-    width: 15%;
-    margin: 0 0 0 0;
-}
-
-#portafolio{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(247, 243, 243);
-
-}
-
- #portafolio h3, #formulario h3{
-    width: 100%;
-}
-
-#portafolio_gridd{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    justify-content: center;
-    text-align: center;
-    width: 80%;
-    gap: 2rem;
-
-}
-
-.portafolio_gridd_item h3, .portafolio_gridd_item p, .blog_item h3, .blog_item p{
-
-    padding: 0 2rem 0 2rem;
-    line-height:2;
-    text-align: left;
-}
-.portafolio_gridd_item button, #blog_banner_buttom button, #configuracion  button{
-    color: white;
-    height: 3rem;
-    border-radius: 0.2rem;
-    margin: 2rem 2rem 2rem 2rem;
-    font-weight:700;
-    font-size: large;
-    border: none;
-}
-.portafolio_gridd_item button, #blog_banner_buttom button, #configuracion  button, form input[type=submit]{
-    width: 38%;
- }
-
- .portafolio_gridd_item button,.btn--black, form input[type=submit]{
-    background-color: #252122;
-}
-
- #configuracion  button{
-    width: 15%;
-    margin: 0 0 0 0;
-}
-
-.portafolio_gridd_item, .blog_item{
-    background-color: white;
-    text-align: left;
-    border-bottom: rgb(182, 180, 180) 1px solid;
-    /* gap:2rem; */
-}
-
-#blog, #informacion{
-    width: 80%;
-    gap: 2.5rem;
-
-}
-
-.blog_item{
-    width: 46%;
-}
-
-#blog_banner_buttom{
-    gap: 0rem;
-    justify-content: flex-start;
-    /* padding: 2rem 0 2rem 0; */
-}
-
-
-/* FOOTER*/
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(36,33,34,255);
-
-}
-
-footer h3, h4, footer span{
-    color: white;
-}
-
-footer a{
-    text-decoration: underline;
-}
-
-
-#informacion{
-    gap: 3rem;
-    text-align: left;
-}
-
-
-#calendario{
-    width: 65%;
-    gap: 2rem;
-
-
-}
-.calendario_item{
-    text-align: left;
-    border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
-    padding-bottom: 0.5rem;
-    gap: 3rem;
-    justify-content: left;
-}
-.calendar_number{
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    background-color: #d52349;
-    width: 10%;
-    height: 4rem;
-    padding: 0.5rem 0 0 1.5rem;
-
-}
-
-.num{
-    font-size:x-large;
-}
-.calendar_description{
-    width: 75%;
-}
-
-#calendario p{
-    line-height: 1.5;
-}
-#about{
-
-    text-align: left;
-    gap: 3rem;
-    width: 25%;
-}
-
-#about button{
-    width: 45%;
-    background-color: #d52349;
-    color: white;
-    height: 3rem;
-    border-radius: 0.2rem;
-    font-weight:700;
-    font-size: large;
-    border: none;
-}
-
-#about p{
-    padding: 0 2rem 0 0rem;
-    line-height:2;
-}
-
-#about a, footer a{
-    color:rgb(199, 197, 197);
-    text-decoration: underline;
-}
-
-#contactos{
-    width: 80%;
-    text-align: left;
-    justify-content: flex-start;
-    padding: 3rem;
-    gap: 7rem;
-
-}
-
-#enlaces{
-    width: 65%;
-    justify-content: left;
-    text-align: left;
-    gap: 5rem;
-
-}
-
-#enlaces li{
-    border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
-    padding-bottom: 1rem;
-
-}
-
-.enlaces_item, #datos, #redes, .enlaces_item ul{ gap: 2rem }
-
-.enlaces_item{ width: 44%; }
-
-#redes{ width: 25% }
-
-#redes li{
-    position: relative;
-    width: 5%;
-    text-align: center;
-    justify-content: center;
-}
-
-#fb, #link{
-    background-color: gray;
-}
-
-#tw{
-    background-color: #2daae4;
-}
-
-#dribbb{
-    background-color: #c4376b;
-}
-
-#tumb{
-    background-color:#2b4661;
-
-}
-#datos{
-    text-align: left;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
-#datos p{
-    line-height:2;
-   
-}
-
-.datos_p{
-    width: 60%;
-}
-
-.datos_item{
-    /* gap: 4rem; */
-    border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
-    padding-bottom: 1rem;
-    width: 100%;
-    justify-content: left;
-}
-
-.ico{
-    color: white;
-    padding: 0.6rem 0 0 0;
-    width:50px;
-    height:50px; 
-    font-size: 2em;
-    border-radius: 0.5rem;
-}
-
-#redes ul{
-    gap:3rem;
-    justify-content: left;
-    padding-bottom: 1.8rem;
-}
-
-.links{
-    background: rgba(255, 255, 255, 0.05);
-    height: 4rem;
-    padding: 1.5rem 1rem 1rem 1rem;
-    border-radius: 0.2rem;
-}
-.links li{
-    border-left: solid 1px rgba(255, 255, 255, 0.05);
-    padding: 0 0 0 1em;
-}
-
-ul.links li:first-child {
-    border-left: 0;
-    padding-left: 0;
-}
-
-
-
-/* --------------------- FORMULARIO ------------------- */
-
-form{
-    text-align: center;
-    gap: 2rem;
-    width: 40%;
-    padding: 2rem 0rem 2rem 2rem;
-    align-items: center;
-    border-radius: 50px;
-    background: #f8f6f6;
-    box-shadow:  -20px 20px 60px #dfdede,
-            20px -20px 60px #ffffff;
-
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.formulario{
-    justify-content: left;
-    text-align: left;
-    width: 90%;
-    gap: 1.5rem;
-}
-
-#personal_data{
-    justify-content: flex-start;
-    
-}
-
-.personal_data_item{
-    width: 45%;
-}
-
-
-
-input[type=text], select, textarea{
-     border-top: none;
-     border-left: none;
-     border-right: none;
-     background: #f8f6f6;
-     border-color: gray 2px solid;
-}
-
-form input[type=submit]{
-    background-color: black;
-    width: 30%;
-    color: white;
-    height: 3rem;
-    border-radius: 0.2rem;
-    font-weight:700;
-    font-size: large;
-    border: none;
-}
-
-textarea{ 
-    height: 1.5rem;
-    width: 90%;
-    
-}
-
-input [type=text]{
-    width: 80%;
-}
-
-select{
-    width: 70%;
-}
-
-.whoare{
-    gap: 1rem;
-}
-.whoare_item{
-    gap: 1rem;
-    justify-content: left;
-
-}
-
-#data_piltic{
-    gap: 0.7rem;
-    justify-content: left;
-}
-
-.bnt--red{
-    background-color: #d52349;
-}
-
-
-
-
-
-/*--------------------------RESPONSIVE------------------------------*/
-
-@media screen and (max-width : 1600px){
-
-    #portafolio_gridd{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .blog_item { width: 48%;}
-
-    .bandera { width: 70%;}
-
-    #blog_banner_buttom button{ margin: 2rem 1rem 2rem 2rem;}
-
-    form { width: 50%;}
-
-    /* select { width: 87%; } */
-
-    .calendar_number { padding: 0.5rem 0 0 1rem;}
-
-    #about button { width: 50%;}
-
-    #titulo { width: 45%;}
-
-    #enlaces { 
-        width: 62%; 
-        gap:3rem
-    }
-    .datos_item {
-        padding-bottom: 2rem;
-    }
-
-
-}
-@media screen and (max-width : 1400px){
-
-    select { width: 87%; }
-    #blog_banner_buttom button{width: 40%;}
-
-    #contactos {
-        width: 84%;
-        gap: 3rem;
-     
-    }
-    #enlaces { 
-        gap: 2rem;
-        width: 69%; 
-    }
-
-    .ico {
-        width: 40px;
-        height: 40px;
-        padding: 0.3rem 0 0 0;
-    }
-
-    #redes ul {
-     gap: 2rem;
-     justify-content: left;
-    }
-
-}
-
-@media screen and (max-width : 900px){
-
-    #configuracion button { width: 32%; }
-
-    .blog_item, #enlaces, .bandera { width: 100%; }
-
-    form { width: 80%; }
-
-    #calendario, #about, #redes { width: 95%; }
-
-    header{ height: 300px;}
-}
-
-@media screen and (max-width : 480px){
-
-    .bandera{ width: 45%;}
-
-    .iconer_banner_item, form{ width: 95%;}
-
-    #configuracion button {
-        width: 42%;
-    }
-
-    .portafolio_gridd_item{
-        margin: 0 1rem 0 1rem;
-    }
-
-    #blog, #informacion, select { width: 90%;}
-
-    .blog_item, #enlaces, .personal_data_item{
-        width: 100%;
-    }
-
-    #blog_banner_buttom button {
-        width: 80%;
-        margin: 1rem 1rem 1rem 2re
-    }
-
-    select { margin-top: 1rem;}
-
-
-    .calendario_item { gap: 2rem;}
-
-    .calendar_number { 
-        width: 15%;
-        padding: 0.5rem 0 0 0.5rem;
-    }
-
-    #contactos, .enlaces_item {
-        width: 100%;
-     }
-
-     .portafolio_gridd_item button, form input[type=submit] {
-        width: 50%;
-    }
-
-    .links { height: 10rem;}
-    header{ background-size: auto 100%;}
-
-    #titulo { width: 95%;}
-
-    nav {
-        padding-top: 0rem;
-        display: flex;
-       }
-     
-       .checkbtn_menu{
-         display: block;
-       } 
-    nav ul{
-        
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: left;
-        padding-left: 3rem;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: white;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 100;
-          
-    }
-
-    #check_menu:checked ~ ul{
-        left:0;
-      } 
-
-      #logo_etiqueta2, #logo_etiqueta{
-        display: flex;
-        gap: 5rem;
-        justify-content: center;
-      }
-
-      
-
-
-
-    
-
-        
-}
-
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+* html,
+* body {
+  font-size: 16px;
+  font-family: Arial, Verdana, Tahoma, Trebuchet, sans-serif;
+}
+* html a,
+* body a {
+  text-decoration: none;
+  color: #827a7c;
+}
+* html nav,
+* body nav {
+  justify-content: center;
+  text-align: center;
+}
+* html nav h1,
+* body nav h1 {
+  font-weight: 900;
+  padding-left: 2rem;
+}
+* html nav .checkbtn_menu,
+* body nav .checkbtn_menu {
+  font-size: 30px;
+  color: rgb(9, 51, 109);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+* html nav #check_menu,
+* body nav #check_menu {
+  display: none;
+}
+* html nav ul,
+* body nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+* html nav ul div,
+* body nav ul div {
+  display: none;
+}
+* html nav ul li,
+* body nav ul li {
+  padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+  border-radius: 5%;
+}
+* html nav ul li:hover,
+* body nav ul li:hover {
+  background-color: #d52349;
+  border-radius: 5%;
+}
+* html nav ul li:hover > a,
+* body nav ul li:hover > a {
+  color: white;
+}
+* html header,
+* body header {
+  height: 450px;
+  background-image: url(./img/pic01.jpg);
+  background-repeat: no-repeat;
+  background-color: #cce8f4;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+* html header div,
+* body header div {
+  background-color: #252122;
+  width: 30%;
+  border-radius: 2%;
+  padding: 1rem 0rem 1rem 0rem;
+}
+* html header div p,
+* body header div p {
+  color: #d52349;
+}
+* html header div h2,
+* body header div h2 {
+  color: white;
+  font-weight: 900;
+  padding: 0rem 0rem 1rem 0rem;
+}
+* html #configuracion,
+* body #configuracion {
+  background-color: white;
+  text-align: center;
+}
+* html #configuracion #iconer_banner,
+* body #configuracion #iconer_banner {
+  padding: 3rem 0rem 3rem 0rem;
+  gap: 2rem;
+  width: 80%;
+}
+* html #configuracion #iconer_banner .iconer_banner_item,
+* body #configuracion #iconer_banner .iconer_banner_item {
+  width: 30%;
+  align-items: center;
+  gap: 1.2rem;
+  line-height: 1.5;
+  padding: 0rem 0rem 0rem 0rem;
+}
+* html #configuracion #iconer_banner .iconer_banner_item #bandera1,
+* body #configuracion #iconer_banner .iconer_banner_item #bandera1 {
+  height: 8.5rem;
+  clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+  width: 50%;
+  border-radius: 5%;
+  background-color: #d52349;
+}
+* html #configuracion #iconer_banner .iconer_banner_item #bandera2,
+* body #configuracion #iconer_banner .iconer_banner_item #bandera2 {
+  height: 8.5rem;
+  clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+  width: 50%;
+  border-radius: 5%;
+  background-color: #252122;
+}
+* html #configuracion #iconer_banner .iconer_banner_item #bandera3,
+* body #configuracion #iconer_banner .iconer_banner_item #bandera3 {
+  height: 8.5rem;
+  clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+  width: 50%;
+  border-radius: 5%;
+  background-color: #827a7c;
+}
+* html #configuracion #iconer_banner .iconer_banner_item .icon,
+* body #configuracion #iconer_banner .iconer_banner_item .icon {
+  padding: 1rem 0rem 0rem 0rem;
+  width: 7rem;
+  height: 5rem;
+}
+* html #configuracion #btns,
+* body #configuracion #btns {
+  width: 100%;
+}
+* html #configuracion #btns .bt1,
+* body #configuracion #btns .bt1 {
+  color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 2rem 2rem 2rem 2rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #d52349;
+  width: 15%;
+}
+* html #configuracion #btns .bt2,
+* body #configuracion #btns .bt2 {
+  color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 2rem 2rem 2rem 2rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #252122;
+  width: 15%;
+}
+* html #portafolio,
+* body #portafolio {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(247, 243, 243);
+}
+* html #portafolio h3,
+* body #portafolio h3 {
+  width: 100%;
+}
+* html #portafolio #portafolio_gridd,
+* body #portafolio #portafolio_gridd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  gap: 2rem;
+}
+* html #portafolio #portafolio_gridd .portafolio_gridd_item,
+* body #portafolio #portafolio_gridd .portafolio_gridd_item {
+  background-color: white;
+  text-align: left;
+  border-bottom: rgb(182, 180, 180) 1px solid;
+  width: 100%;
+}
+* html #portafolio #portafolio_gridd .portafolio_gridd_item h3, * html #portafolio #portafolio_gridd .portafolio_gridd_item p,
+* body #portafolio #portafolio_gridd .portafolio_gridd_item h3,
+* body #portafolio #portafolio_gridd .portafolio_gridd_item p {
+  padding: 1.5rem 2rem 0 2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+* html #portafolio #portafolio_gridd .portafolio_gridd_item button,
+* body #portafolio #portafolio_gridd .portafolio_gridd_item button {
+  color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 2rem 2rem 2rem 2rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #252122;
+  width: 38%;
+}
+* html #blog,
+* body #blog {
+  width: 80%;
+  gap: 2.5rem;
+}
+* html #blog .blog_item,
+* body #blog .blog_item {
+  background-color: white;
+  text-align: left;
+  border-bottom: rgb(182, 180, 180) 1px solid;
+  width: 48%;
+}
+* html #blog h3, * html #blog p,
+* body #blog h3,
+* body #blog p {
+  padding: 1.5rem 2rem 0 2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+* html #blog .p1,
+* body #blog .p1 {
+  padding-top: 0rem;
+}
+* html #blog #blog_banner_buttom,
+* body #blog #blog_banner_buttom {
+  justify-content: left;
+}
+* html #blog #blog_banner_buttom .bt1,
+* body #blog #blog_banner_buttom .bt1 {
+  color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 2rem 0rem 2rem 2rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #d52349;
+  width: 35%;
+}
+* html #blog #blog_banner_buttom .bt2,
+* body #blog #blog_banner_buttom .bt2 {
+  color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 2rem 0rem 2rem 2rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #252122;
+  width: 35%;
+}
+* html #formulario form,
+* body #formulario form {
+  text-align: center;
+  gap: 2rem;
+  width: 40%;
+  padding: 2rem 0rem 2rem 2rem;
+  align-items: center;
+  border-radius: 50px;
+  background: #f8f6f6;
+  box-shadow: -20px 20px 60px #dfdede, 20px -20px 60px #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+}
+* html #formulario form h3,
+* body #formulario form h3 {
+  width: 100%;
+}
+* html #formulario form .formulario,
+* body #formulario form .formulario {
+  justify-content: left;
+  text-align: left;
+  width: 90%;
+  gap: 1.5rem;
+}
+* html #formulario form .formulario #personal_data,
+* body #formulario form .formulario #personal_data {
+  justify-content: flex-start;
+}
+* html #formulario form .formulario #personal_data .personal_data_item,
+* body #formulario form .formulario #personal_data .personal_data_item {
+  width: 45%;
+  padding-top: 1rem;
+}
+* html #formulario form .formulario input[type=text], * html #formulario form .formulario select, * html #formulario form .formulario textarea,
+* body #formulario form .formulario input[type=text],
+* body #formulario form .formulario select,
+* body #formulario form .formulario textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #f8f6f6;
+  border-color: gray 2px solid;
+  height: 1.5rem;
+  width: 90%;
+}
+* html #formulario form .formulario .whoare,
+* body #formulario form .formulario .whoare {
+  gap: 1rem;
+}
+* html #formulario form .formulario .whoare .whoare_item,
+* body #formulario form .formulario .whoare .whoare_item {
+  gap: 1rem;
+  justify-content: left;
+}
+* html #formulario form .formulario input[type=submit],
+* body #formulario form .formulario input[type=submit] {
+  color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 0rem 0rem 0rem 0rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #252122;
+  width: 35%;
+}
+* html footer,
+* body footer {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 33, 34);
+}
+* html footer #informacion,
+* body footer #informacion {
+  gap: 3rem;
+  text-align: left;
+}
+* html footer #informacion #calendario,
+* body footer #informacion #calendario {
+  width: 65%;
+  gap: 2rem;
+}
+* html footer #informacion #calendario h3,
+* body footer #informacion #calendario h3 {
+  width: 100%;
+}
+* html footer #informacion #calendario .calendario_item,
+* body footer #informacion #calendario .calendario_item {
+  text-align: left;
+  border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
+  padding-bottom: 0.5rem;
+  gap: 3rem;
+  justify-content: left;
+}
+* html footer #informacion #calendario .calendario_item .calendar_number,
+* body footer #informacion #calendario .calendario_item .calendar_number {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #d52349;
+  width: 10%;
+  height: 4rem;
+  padding: 0.5rem 0 0 1.5rem;
+}
+* html footer #informacion #calendario .calendario_item .calendar_number .num,
+* body footer #informacion #calendario .calendario_item .calendar_number .num {
+  font-size: x-large;
+}
+* html footer span, * html footer p, * html footer h3, * html footer h4,
+* body footer span,
+* body footer p,
+* body footer h3,
+* body footer h4 {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
