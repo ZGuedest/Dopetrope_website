@@ -1,4 +1,10 @@
-* html footer #informacion #calendario .calendario_item,
+* html footer .links,
+* body footer .links, * html footer #contactos #redes #datos .datos_item,
+* body footer #contactos #redes #datos .datos_item, * html footer #contactos #redes ul,
+* body footer #contactos #redes ul, * html footer #contactos #enlaces,
+* body footer #contactos #enlaces, * html footer #contactos,
+* body footer #contactos, * html footer #informacion #about #enlaces,
+* body footer #informacion #about #enlaces, * html footer #informacion #calendario .calendario_item,
 * body footer #informacion #calendario .calendario_item, * html footer #informacion,
 * body footer #informacion, * html #formulario form .formulario .whoare .whoare_item,
 * body #formulario form .formulario .whoare .whoare_item, * html #formulario form .formulario #personal_data,
@@ -15,7 +21,13 @@
   flex-wrap: wrap;
 }
 
-* html footer #informacion #calendario .calendario_item .calendar_number,
+* html footer #contactos #redes #datos,
+* body footer #contactos #redes #datos, * html footer #contactos #redes,
+* body footer #contactos #redes, * html footer #contactos #enlaces .enlaces_item ul,
+* body footer #contactos #enlaces .enlaces_item ul, * html footer #contactos #enlaces .enlaces_item,
+* body footer #contactos #enlaces .enlaces_item, * html footer #informacion #about #enlaces .enlaces_item,
+* body footer #informacion #about #enlaces .enlaces_item, * html footer #informacion #about,
+* body footer #informacion #about, * html footer #informacion #calendario .calendario_item .calendar_number,
 * body footer #informacion #calendario .calendario_item .calendar_number, * html footer #informacion #calendario,
 * body footer #informacion #calendario, * html footer,
 * body footer, * html #formulario form .formulario .whoare,
@@ -87,6 +99,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 * html nav ul div,
 * body nav ul div {
@@ -123,9 +136,9 @@
 * html header div,
 * body header div {
   background-color: #252122;
-  width: 30%;
+  width: 40%;
   border-radius: 2%;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 * html header div p,
 * body header div p {
@@ -315,7 +328,7 @@
 * body #formulario form {
   text-align: center;
   gap: 2rem;
-  width: 40%;
+  width: 50%;
   padding: 2rem 0rem 2rem 2rem;
   align-items: center;
   border-radius: 50px;
@@ -323,6 +336,7 @@
   box-shadow: -20px 20px 60px #dfdede, 20px -20px 60px #ffffff;
   font-size: 17px;
   font-weight: 600;
+  margin-bottom: 4rem;
 }
 * html #formulario form h3,
 * body #formulario form h3 {
@@ -383,19 +397,36 @@
   align-items: center;
   background-color: rgb(36, 33, 34);
 }
+* html footer span, * html footer h3, * html footer h4,
+* body footer span,
+* body footer h3,
+* body footer h4 {
+  color: white;
+}
+* html footer p,
+* body footer p {
+  color: #827a7c;
+}
+* html footer a,
+* body footer a {
+  color: rgb(199, 197, 197);
+  text-decoration: underline;
+}
 * html footer #informacion,
 * body footer #informacion {
   gap: 3rem;
   text-align: left;
+  width: 80%;
 }
 * html footer #informacion #calendario,
 * body footer #informacion #calendario {
-  width: 65%;
-  gap: 2rem;
+  width: 70%;
+  gap: 1rem;
 }
 * html footer #informacion #calendario h3,
 * body footer #informacion #calendario h3 {
   width: 100%;
+  padding-bottom: 2rem;
 }
 * html footer #informacion #calendario .calendario_item,
 * body footer #informacion #calendario .calendario_item {
@@ -405,24 +436,187 @@
   gap: 3rem;
   justify-content: left;
 }
+* html footer #informacion #calendario .calendario_item p,
+* body footer #informacion #calendario .calendario_item p {
+  padding: 0 2rem 0 0rem;
+  line-height: 1.5;
+  text-align: left;
+}
 * html footer #informacion #calendario .calendario_item .calendar_number,
 * body footer #informacion #calendario .calendario_item .calendar_number {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   background-color: #d52349;
   width: 10%;
   height: 4rem;
-  padding: 0.5rem 0 0 1.5rem;
+  padding: 0.5rem 0 0 1rem;
 }
 * html footer #informacion #calendario .calendario_item .calendar_number .num,
 * body footer #informacion #calendario .calendario_item .calendar_number .num {
   font-size: x-large;
 }
-* html footer span, * html footer p, * html footer h3, * html footer h4,
-* body footer span,
-* body footer p,
-* body footer h3,
-* body footer h4 {
+* html footer #informacion #calendario .calendario_item .calendar_description,
+* body footer #informacion #calendario .calendario_item .calendar_description {
+  width: 80%;
+}
+* html footer #informacion #about,
+* body footer #informacion #about {
+  text-align: left;
+  gap: 3rem;
+  width: 25%;
+}
+* html footer #informacion #about p,
+* body footer #informacion #about p {
+  padding: 0 2rem 0 0rem;
+  line-height: 1.5;
+  text-align: left;
+}
+* html footer #informacion #about button,
+* body footer #informacion #about button {
   color: white;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 0rem 2rem 2rem 0rem;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: #d52349;
+  width: 65%;
+}
+* html footer #informacion #about #enlaces,
+* body footer #informacion #about #enlaces {
+  width: 65%;
+  justify-content: left;
+  text-align: left;
+  gap: 5rem;
+}
+* html footer #informacion #about #enlaces .enlaces_item,
+* body footer #informacion #about #enlaces .enlaces_item {
+  width: 100%;
+}
+* html footer #contactos,
+* body footer #contactos {
+  width: 80%;
+  text-align: left;
+  justify-content: flex-start;
+  padding-top: 1.5rem;
+  gap: 6rem;
+}
+* html footer #contactos #enlaces,
+* body footer #contactos #enlaces {
+  width: 65%;
+  justify-content: left;
+  text-align: left;
+  gap: 3rem;
+}
+* html footer #contactos #enlaces li,
+* body footer #contactos #enlaces li {
+  border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+* html footer #contactos #enlaces .enlaces_item,
+* body footer #contactos #enlaces .enlaces_item {
+  width: 44%;
+}
+* html footer #contactos #redes,
+* body footer #contactos #redes {
+  width: 25%;
+}
+* html footer #contactos #redes ul,
+* body footer #contactos #redes ul {
+  gap: 2rem;
+  justify-content: left;
+  padding-bottom: 1.8rem;
+  padding-top: 1rem;
+}
+* html footer #contactos #redes ul li,
+* body footer #contactos #redes ul li {
+  position: relative;
+  width: 5%;
+  text-align: center;
+  justify-content: center;
+}
+* html footer #contactos #redes ul li a,
+* body footer #contactos #redes ul li a {
+  color: white;
+}
+* html footer #contactos #redes ul li #fb, * html footer #contactos #redes ul li #link,
+* body footer #contactos #redes ul li #fb,
+* body footer #contactos #redes ul li #link {
+  background-color: gray;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0.3rem 0 0 0;
+  font-size: 2em;
+  border-radius: 0.5rem;
+}
+* html footer #contactos #redes ul li #tw,
+* body footer #contactos #redes ul li #tw {
+  background-color: #2daae4;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0.3rem 0 0 0;
+  font-size: 2em;
+  border-radius: 0.5rem;
+}
+* html footer #contactos #redes ul li #dribbb,
+* body footer #contactos #redes ul li #dribbb {
+  background-color: #c4376b;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0.3rem 0 0 0;
+  font-size: 2em;
+  border-radius: 0.5rem;
+}
+* html footer #contactos #redes ul li #tumb,
+* body footer #contactos #redes ul li #tumb {
+  background-color: #2b4661;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0.3rem 0 0 0;
+  font-size: 2em;
+  border-radius: 0.5rem;
+}
+* html footer #contactos #redes #datos,
+* body footer #contactos #redes #datos {
+  text-align: left;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+* html footer #contactos #redes #datos .datos_item,
+* body footer #contactos #redes #datos .datos_item {
+  border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
+  padding-bottom: 1rem;
+  width: 100%;
+  justify-content: left;
+  gap: 1rem;
+}
+* html footer #contactos #redes #datos .datos_item .datos_p,
+* body footer #contactos #redes #datos .datos_item .datos_p {
+  width: 60%;
+}
+* html footer .links,
+* body footer .links {
+  background: rgba(255, 255, 255, 0.05);
+  height: 4rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin: 2rem 0 0 0;
+  border-radius: 0.2rem;
+}
+* html footer .links li,
+* body footer .links li {
+  border-left: solid 1px rgba(255, 255, 255, 0.05);
+  padding: 0 0 0 1em;
+  color: #827a7c;
+}
+* html footer .links li:first-child,
+* body footer .links li:first-child {
+  border-left: 0;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

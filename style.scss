@@ -32,8 +32,8 @@ $color_gris:#827a7c;
     border-bottom: rgb(182, 180, 180) 1px solid;
     width: $width;
 }
-@mixin texto_portofolio_blog () {
-    padding: 1.5rem 2rem 0 2rem;
+@mixin texto_portofolio_blog ( $padding: 1.5rem 2rem 0 2rem) {
+    padding:$padding;
     line-height:1.5;
     text-align: left;
 }
@@ -48,7 +48,19 @@ $color_gris:#827a7c;
     width: $width;
 }
 
-//HERENCIA
+@mixin icono ($background:gray){
+
+    background-color: $background;
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 0.3rem 0 0 0; 
+    font-size: 2em;
+    border-radius: 0.5rem;
+    
+}
+
+//EXTEND/INHERITANCE
 
 %flex_row{
     display: flex;
@@ -109,6 +121,7 @@ $color_gris:#827a7c;
                 flex-wrap: wrap;
                 gap: 2rem;
                 justify-content: center;
+                margin-bottom: 1rem;
 
                 div{
                     display: none;
@@ -148,9 +161,9 @@ $color_gris:#827a7c;
 
             div{
                 background-color:$color_negro;
-                width: 30%;
+                width: 40%;
                 border-radius: 2%;
-                padding: 1rem 0rem 1rem 0rem;
+                padding: 1.5rem 0rem 1.5rem 0rem;
 
                 p{
                     color:$color_rojo;
@@ -279,7 +292,7 @@ $color_gris:#827a7c;
                 @extend %flex_colum;
                 text-align: center;
                 gap: 2rem;
-                width: 40%;
+                width: 50%;
                 padding: 2rem 0rem 2rem 2rem;
                 align-items: center;
                 border-radius: 50px;
@@ -289,6 +302,8 @@ $color_gris:#827a7c;
 
                 font-size: 17px;
                 font-weight: 600;
+                margin-bottom: 4rem;
+
                 h3 {
                     width: 100%;
                 }
@@ -338,19 +353,33 @@ $color_gris:#827a7c;
             justify-content: center;
             align-items: center;
             background-color: rgba(36,33,34,255);
+
+            span, h3, h4{
+                color: white;  
+            }
+            p{
+                color: $color_gris;
+            }
+            a{
+                color:rgb(199, 197, 197);
+                text-decoration: underline;
+            }
+            
             
             #informacion{
                 @extend %flex_row;
                 gap: 3rem;
                 text-align: left;
+                width: 80%;
 
                 #calendario {
-                    width: 65%;
-                    gap: 2rem;
+                    width: 70%;
+                    gap: 1rem;
                     @extend %flex_colum;
 
                     h3 {
                         width: 100%;
+                        padding-bottom: 2rem;
                     }
 
                     .calendario_item{
@@ -361,29 +390,175 @@ $color_gris:#827a7c;
                         gap: 3rem;
                         justify-content: left;
 
+                        p{
+                            @include texto_portofolio_blog ($padding: 0 2rem 0 0rem);
+                        }
+
                         .calendar_number{
                             @extend %flex_colum;
                             clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
                             background-color: #d52349;
                             width: 10%;
                             height: 4rem;
-                            padding: 0.5rem 0 0 1.5rem;
-
-                            
-
+                            padding: 0.5rem 0 0 1rem;
                             .num{
                                 font-size:x-large;
                             }
-                        
                         }
+                        .calendar_description{
+                            width: 80%;
+
+                        }
+
+
                     }
                     
                 }
+
+                #about {
+                    @extend %flex_colum;
+                    text-align: left;
+                    gap: 3rem;
+                    width: 25%;
+
+                    p{
+                        @include texto_portofolio_blog ($padding: 0 2rem 0 0rem);
+                        
+                    }
+
+                    button{
+                        @include button($color:$color_rojo, $width:65%, $margin: 0rem 2rem 2rem 0rem );
+                    }
+
+                    #enlaces{
+                        @extend %flex_row;
+                        width: 65%;
+                        justify-content: left;
+                        text-align: left;
+                        gap: 5rem;
+
+                        .enlaces_item {
+                            @extend %flex_colum;
+                            width: 100%;
+                         }
+                    
+                    }
+                }
+            } 
+            #contactos{
+                @extend %flex_row;
+                width: 80%;
+                text-align: left;
+                justify-content: flex-start;
+                padding-top: 1.5rem;
+                gap: 6rem;
+
+                #enlaces {
+                    @extend %flex_row;
+                    width: 65%;
+                    justify-content: left;
+                    text-align: left;
+                    gap: 3rem;
+
+                    li{
+                        border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
+                        padding-bottom: 1rem;
+                        padding-top: 1rem;
+                       
+                    
+                    }
+
+                    .enlaces_item {
+                        @extend %flex_colum;
+                        width: 44%; 
+                        ul{
+                            @extend %flex_colum;
+                            // gap: 2rem;
+                        }
+                    }
+                }
+
+                #redes{ 
+                    @extend %flex_colum;
+                    width: 25% ;
+
+                    ul{
+                        @extend %flex_row;
+                        gap:2rem;
+                        justify-content: left;
+                        padding-bottom: 1.8rem;
+                        padding-top: 1rem;
+
+                        li{
+                            position: relative;
+                            width: 5%;
+                            text-align: center;
+                            justify-content: center;
+                            a{
+                                color:white;
+                            }
+
+                            #fb, #link{
+                                @include icono ();
+                            }
+
+                            #tw{
+                                @include icono ($background: #2daae4);
+                            }
+
+                            #dribbb{
+                                @include icono ($background: #c4376b);
+                            }
+
+                            #tumb{
+                                @include icono ($background: #2b4661);
+                            }
+                        }
+                        
+                    }
+
+                    #datos{
+                        @extend %flex_colum;
+                        text-align: left;
+                        align-items: flex-start;
+                        gap: 0.5rem;
+
+                        
+                        .datos_item{
+                            @extend %flex_row;
+                            border-bottom: rgba(182, 180, 180, 0.074) 1px solid;
+                            padding-bottom: 1rem;
+                            width: 100%;
+                            justify-content: left;
+                            gap: 1rem;
+
+                            .datos_p{
+                                width: 60%;
+                            }
+
+                        }
+                    }
+                }
+               
+            }
+            .links {
+                @extend %flex_row;
+                background: rgba(255, 255, 255, 0.05);
+                height: 4rem;
+                padding: 1.5rem 1rem 1rem 1rem;
+                margin: 2rem 0 0 0 ;
+                border-radius: 0.2rem;
+                li {
+                    border-left: solid 1px rgba(255, 255, 255, 0.05);
+                    padding: 0 0 0 1em;
+                    color: $color_gris;
+                }
+                li:first-child {
+                    border-left: 0;
+                    padding-left: 0;
+                }
             }
 
-            span, p, h3, h4{
-                color: white;
-            }
 
         }
 

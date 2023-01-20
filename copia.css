@@ -657,11 +657,11 @@ select{
         left:0;
       } 
 
-      #logo_etiqueta2, #logo_etiqueta{
-        display: flex;
-        gap: 5rem;
-        justify-content: center;
-      }
+    #logo_etiqueta2, #logo_etiqueta{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    }
 
       
 
