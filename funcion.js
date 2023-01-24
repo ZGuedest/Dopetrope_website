@@ -2,7 +2,17 @@
  //let button= document.getElementById("form_button");
 
 let button= document.getElementById("form_button");
+let check = document.getElementById("polit_datos");
 
+check.addEventListener("change", (event)=>{
+
+    if(check.checked==true){
+        button.disabled=false;
+    }
+    else{
+        button.disabled=true;
+    }  
+})
 
 button.addEventListener("click", (event)=> {
 
@@ -14,15 +24,13 @@ button.addEventListener("click", (event)=> {
 
      let result=" ";
 
-     for( let i=zu; i<=mi; i+=3){
-
+     for( let i=zu; i<=mi; i++){
         result+=i+ " ";
-       
      }
+
     //  document.getElementById("textArea").value=result;
  
      document.getElementById("w").innerHTML=result;
-
 
 })
 

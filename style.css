@@ -172,7 +172,8 @@
 * html #configuracion #iconer_banner .iconer_banner_item #bandera1,
 * body #configuracion #iconer_banner .iconer_banner_item #bandera1 {
   height: 8.5rem;
-  clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+          clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
   width: 50%;
   border-radius: 5%;
   background-color: #d52349;
@@ -180,7 +181,8 @@
 * html #configuracion #iconer_banner .iconer_banner_item #bandera2,
 * body #configuracion #iconer_banner .iconer_banner_item #bandera2 {
   height: 8.5rem;
-  clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+          clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
   width: 50%;
   border-radius: 5%;
   background-color: #252122;
@@ -188,7 +190,8 @@
 * html #configuracion #iconer_banner .iconer_banner_item #bandera3,
 * body #configuracion #iconer_banner .iconer_banner_item #bandera3 {
   height: 8.5rem;
-  clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
+          clip-path: polygon(100% 0, 100% 68%, 50% 100%, 0 68%, 0 0);
   width: 50%;
   border-radius: 5%;
   background-color: #827a7c;
@@ -444,7 +447,8 @@
 }
 * html footer #informacion #calendario .calendario_item .calendar_number,
 * body footer #informacion #calendario .calendario_item .calendar_number {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   background-color: #d52349;
   width: 10%;
   height: 4rem;
@@ -617,6 +621,4 @@
 * body footer .links li:first-child {
   border-left: 0;
   padding-left: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

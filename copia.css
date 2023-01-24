@@ -546,8 +546,7 @@ select{
 
     #contactos {
         width: 84%;
-        gap: 3rem;
-     
+        gap: 3rem; 
     }
     #enlaces { 
         gap: 2rem;
